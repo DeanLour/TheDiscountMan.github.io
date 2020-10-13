@@ -1,0 +1,61 @@
+
+#wrap1{
+    background-color: rgb(255, 98, 98);
+    width: 330px;
+    height: 480px;
+    margin: auto;
+    z-index: 1;
+
+    
+}
+img{
+    border-radius: 60%;
+    width: 130px;
+    height: 130px;
+}
+.profile{
+    margin: auto;
+   z-index: 2;
+}
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: 0;
+  }
+  #back{
+      z-index: 0;
+  }
+.s1{
+    align-content: center;
+}
+#n1{
+ color: white;
+}
+h1{
+    color: white;
+}
+body {
+    overflow-x: hidden; /* Hide scrollbars */
+   overflow-y: hidden;
+  }
+  h1{
+      font-style: italic;
+  }
+  #bon{
+  width: 120px;
+  height: 60px;
+  background-color: tomato;
+  }
+  .pure-button{
+      width: 120px;
+      height: 60px;
+      background-color: rgb(154, 155, 243);
+      border-style: hidden;
+      
+  }
+  .pure-button:hover{
+      background: blanchedalmond;
+  }

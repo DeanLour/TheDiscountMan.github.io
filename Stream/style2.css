@@ -1,0 +1,57 @@
+
+body{
+    animation: bak 10s infinite;
+    color: rgb(255, 255, 255);
+    background-color: black;
+    font-size: 25px;
+  }
+  /*
+  @keyframes bak {
+     
+    0% {
+      background: rgb(0, 0, 0);
+    }
+    25%{
+background: rgb(70, 70, 70);
+    }
+   
+    50% {
+      background:  rgb(146, 146, 146);
+    }
+    75%{
+        background:  rgb(88, 88, 88);
+    }
+    100%{
+      background-color: rgb(68, 68, 68);
+    }
+    
+    70%{
+        background: rgb(24, 24, 24);
+            }
+            84% {
+                background: rgb(167, 167, 167)
+            }
+            84% {
+                background: rgb(102, 102, 102)
+            }
+            100% {
+                background: rgb(61, 61, 61)
+            }
+        }
+ 
+    }
+    */
+.sh-im {
+    width: 450px;
+    height: 250px;
+    border-radius: initial;
+    border-color: rgb(0, 60, 255);
+    border-style: groove;
+}
+
+.pure-button{
+    width: 50px;
+}
+.m-control{
+    background-color: floralwhite;
+}

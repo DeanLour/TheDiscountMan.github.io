@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<head>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.2/particles.min.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="anime.js"></script>
+
+   
+    <body>
+      <canvas class="background"></canvas>
+     
+        <div align="center" class="profile">
+      <img src="https://i.ibb.co/HdBqy76/k-Np-Li2s20boj-Aa-Yo-Qks-U-300x300.jpg">
+    </div>
+
+            <div align="center">
+                <button class="b1" onclick="window.location.href='https://w3docs.com';">Web Apps</button>
+            </div>
+        
+            <div align="center">
+                <button class="b2" onclick="window.location.href='Stream/music.html';">Stream Music
+                </button>
+                <p class="bp2"><b> Try Streaming music here(sample streaming!)</b></p>
+            </div>
+
+            <div align="center" class="tex1">
+            <h1>Creator: Dean Lour</h1>
+             <p1>This website is inteded to be a Portfolio.Everything is made from scatch.<br>
+            Mr Waffle logo and trademark is not affiliated with this website. <br>hosted by github pages.</p1>   
+            </div> 
+
+        
+
+
+    </body>
+
+    
+
+   
+    <script>
+                anime({
+                         targets:['.bp2'],
+                        
+                         keyframes:[
+                         {translateY:240},
+                         {translateX:190}
+                        ],
+                          rotate: 360,
+                     })
+
+
+         anime({
+                  targets:['.tex1'],
+                  keyframes:[
+                         {translateY:430}
+                            ],
+                  rotate: 360,
+                     })
+
+            
+
+
+        anime({
+                  targets:['.profile'],
+                  keyframes:[
+                         {translateY:240}
+                            ],
+                  rotate: 360,
+                     })
+
+
+                  anime({
+                  targets:['.b1'],
+                  
+                  keyframes:[
+                 {translateY:340},
+                 {translateX:-190}    
+                  ],
+                  rotate: 360,
+                     })
+
+
+
+                     anime({
+                         targets:['.b2'],
+                        
+                         keyframes:[
+                         {translateY:240},
+                         {translateX:190}
+                        ],
+                          rotate: 360,
+                     })
+                     window.onload = function() {
+  Particles.init({
+    selector: '.background',
+    connectParticles: true,
+    color: '#FFFFFF',
+    minDistance: '150',
+  maxparticles:'200',
+  sizevariations:'6',
+  });
+};
+        
+    </script>
+</head>

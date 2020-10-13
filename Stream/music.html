@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" href="style.css">
+    <script src="anime.js"></script>
+    
+    <body >
+     
+
+      <div class="back">
+        <video autoplay muted loop id="myVideo">
+          <source src="back2.mp4" type="video/mp4">
+        </video>
+    </div>
+     
+
+
+      
+    
+        <div align="center" id="profile">
+          <h1 align="center">Simple Stream</h1>
+          <p id="n1"> Notorious B.I.G <br> Song:Big Poppa</p>
+          <img src="https://i.ibb.co/6Z7bWyn/nbig.jpg">
+  
+         
+          <audio controls class="s1" align="center">
+            <source src="https://app.koofr.net/content/links/213ebc74-125d-409a-8ddb-5bd551ab0cce/files/get/Big%20Poppa.mp3?path=%2F">  
+            </audio>
+            <p id="n1"> Notorious B.I.G.<br> Song:Suicidal Thoughts</p>
+            <img src="https://i.ibb.co/6Z7bWyn/nbig.jpg">
+    
+           
+            <audio controls class="s1" align="center">
+              <source src="https://app.koofr.net/content/links/a1161ba1-dbd7-4971-ad3a-34b863c61f77/files/get/The-Notorious-BIG-Suicidal-Thoughts.mp3?path=%2F">  
+              </audio>
+              
+              <p id="n1"> Notorious B.I.G.<br> Song:Suicidal Thoughts</p>
+              <img src="https://i.ibb.co/6Z7bWyn/nbig.jpg">
+      
+             
+              <audio controls class="s1" align="center">
+                <source src="https://app.koofr.net/content/links/a1161ba1-dbd7-4971-ad3a-34b863c61f77/files/get/The-Notorious-BIG-Suicidal-Thoughts.mp3?path=%2F">  
+                </audio>
+
+
+               <br>
+             <button class="pure-button" onclick="goBack()">Back</button>
+             <script>
+             function goBack() {
+            window.history.go(-1);
+               }
+              </script>
+              
+        </div>
+ 
+ 
+   
+    </body>
+ <script>
+    anime({
+        targets:['#profile'],
+        keyframes:[
+        {translateY:80},
+         ],
+        rotate:360,
+         })
+         anime({
+        targets:['#n1'],
+        keyframes:[
+        {translateY:80},
+         ],
+        rotate:360,
+         })
+        
+  
+
+
+ 
+ </script>
+</head>

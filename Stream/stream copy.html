@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<head>
+ <body>
+    <img class="sh-im" src="https://i.ibb.co/f4ZWLgt/maxresdefault.jpg">
+    <div id="wrapper"
+       
+        <div id='player'>
+        <audio id="music_player">
+        <source src="https://app.koofr.net/content/links/25c43133-4329-4b2c-a15c-1d8a4e88ec88/files/get/Shai%20-%20If%20I%20Ever%20Fall%20In%20Love.mp3?path=%2F"/>
+        </audio>
+        <input type="image" src="https://img.icons8.com/carbon-copy/100/000000/play.png" onclick="play_aud()" id="play_button">
+        <input type="image" src="https://img.icons8.com/dotty/80/000000/pause.png" onclick="pause_aud()" id="play_button">
+        <input type="image" src="https://img.icons8.com/wired/64/000000/stop.png" onclick="stop_aud()" id="play_button">
+        <img   src="https://img.icons8.com/dotty/80/000000/low-volume.png" id="vol_img">
+        <input type="range" id="change_vol" onchange="change_vol()" step="0.05" min="0" max="1" value="1">
+        </div>
+        </div>
+ </body>
+<script>
+    document.addEventListener("DOMContentLoaded", function() { startplayer(); }, false);
+var player;
+
+function startplayer() 
+{
+ player = document.getElementById('music_player');
+ player.controls = false;
+}
+
+function play_aud() 
+{
+ player.play();
+} 
+function pause_aud() 
+{
+ player.pause();
+}
+function stop_aud() 
+{
+ player.pause();
+ player.currentTime = 0;
+}
+function change_vol()
+{
+ player.volume=document.getElementById("change_vol").value;
+}
+</script>
+<style>
+    .sh-im{
+        width: 500px;
+        height: 250px;
+    }
+    body
+{
+ width:100%;
+ margin:0 auto;
+ padding:0px;
+ font-family:helvetica;
+ background-color:#58ACFA;
+}
+#wrapper
+{
+ text-align:center;
+ margin:0 auto;
+ padding:0px;
+ width:995px;
+}
+#player
+{
+ background-color:rgb(255, 255, 255);
+ width:400px;
+ margin-left:300px;
+ padding:5px;
+ box-sizing:border-box;
+}
+input[type="image"]
+{
+ float:left;
+ height:20px;
+ margin-left:2px;
+ margin-right:5px;
+ margin-top:2px;
+}
+#vol_img
+{
+ margin-left:150px;
+ width:20px;
+}
+audio{
+    background-color: white;
+}
+</style>
+
+
+
+
+</head>
